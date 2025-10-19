@@ -65,3 +65,66 @@
   </footer>
 </body>
 </html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>#Inside Hack Gaming</title>
+  <style>
+    body { font-family: Inter, Arial, sans-serif; background:#0b0b0b; color:#eee; margin:0; padding:0; }
+    .wrap { max-width:1100px; margin:40px auto; padding:30px; background:#0f0f10; border-radius:10px; box-shadow:0 6px 30px rgba(0,0,0,0.6); }
+    header { display:flex; align-items:center; gap:20px; }
+    .logo { width:90px; height:90px; background:linear-gradient(135deg,#8b0000,#ff2a2a); border-radius:12px; display:flex; align-items:center; justify-content:center; font-weight:700; color:#fff; font-size:18px; }
+    h1 { margin:0; font-size:26px; color:#ff5959; }
+    p.lead { margin:6px 0 18px 0; color:#cfcfcf; }
+    .grid { display:grid; grid-template-columns:1fr 320px; gap:20px; }
+    .card { background:#121214; padding:16px; border-radius:8px; }
+    a.btn { display:inline-block; padding:10px 14px; background:#ff3b3b; color:#fff; border-radius:6px; text-decoration:none; font-weight:600; }
+    footer { text-align:center; color:#8a8a8a; margin-top:22px; font-size:13px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">#I H G</div>
+      <div>
+        <h1>#Inside Hack Gaming</h1>
+        <p class="lead">Astuces, outils et guides pour améliorer ton gameplay — One hack at a Time.</p>
+      </div>
+    </header>
+
+    <div class="grid" style="margin-top:20px;">
+      <main class="card">
+        <h3>Logiciels & téléchargements</h3>
+        <p>Liste de mes outils et mods — liens de téléchargement sécurisés.</p>
+        <ul>
+          <li><a href="releases/v1.0.zip" class="btn">Télécharger v1.0 (ZIP)</a></li>
+          <!-- Remplace par les vrais liens / releases -->
+        </ul>
+
+        <h3 style="margin-top:14px;">Astuces & guides</h3>
+        <article>
+          <h4>Optimiser vos FPS</h4>
+          <p>Guide rapide : paramètres recommandés, drivers, et réglages du jeu.</p>
+        </article>
+      </main>
+
+      <aside class="card">
+        <h3>Communauté</h3>
+        <p>Rejoins le Discord pour les échanges et mises à jour.</p>
+        <p><a href="#" class="btn">Rejoindre le Discord</a></p>
+        <hr style="margin:12px 0;">
+        <h4>Contact</h4>
+        <p>Email ou autres liens.</p>
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="year"></span> #Inside Hack Gaming — Tous droits réservés.
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
