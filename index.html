@@ -1,122 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inside Hack Gaming</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #000000, #1a0000);
-      color: #fff;
-      text-align: center;
-    }
-    header {
-      background-color: #111;
-      padding: 20px 0;
-      border-bottom: 2px solid #ff0000;
-    }
-    h1 {
-      color: #ff0000;
-      font-size: 2.5em;
-      text-shadow: 0 0 10px #ff0000;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #ff0000;
-    }
-    main {
-      padding: 40px 20px;
-    }
-    footer {
-      background-color: #111;
-      color: #888;
-      padding: 10px 0;
-      border-top: 1px solid #ff0000;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>#Inside Hack Gaming</h1>
-    <nav>
-      <a href="#">Accueil</a>
-      <a href="#">Astuces</a>
-      <a href="#">Téléchargements</a>
-      <a href="#">À propos</a>
-    </nav>
-  </header>
-
-  <main>
-    <h2>Unleashing the fun, one hack at a time ⚡</h2>
-    <p>Bienvenue sur Inside Hack Gaming — ton espace dédié aux astuces, outils et conseils pour t’amuser et optimiser ton expérience gaming !</p>
-  </main>
-
-  <footer>
-    © 2025 Inside Hack Gaming — Tous droits réservés
-  </footer>
-</body>
-</html>
-<!doctype html>
-<html lang="fr">
-<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>#Inside Hack Gaming</title>
+  <meta name="description" content="Inside Hack Gaming — astuces, outils et guides pour améliorer ton gameplay.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
-    body { font-family: Inter, Arial, sans-serif; background:#0b0b0b; color:#eee; margin:0; padding:0; }
-    .wrap { max-width:1100px; margin:40px auto; padding:30px; background:#0f0f10; border-radius:10px; box-shadow:0 6px 30px rgba(0,0,0,0.6); }
-    header { display:flex; align-items:center; gap:20px; }
-    .logo { width:90px; height:90px; background:linear-gradient(135deg,#8b0000,#ff2a2a); border-radius:12px; display:flex; align-items:center; justify-content:center; font-weight:700; color:#fff; font-size:18px; }
-    h1 { margin:0; font-size:26px; color:#ff5959; }
-    p.lead { margin:6px 0 18px 0; color:#cfcfcf; }
-    .grid { display:grid; grid-template-columns:1fr 320px; gap:20px; }
-    .card { background:#121214; padding:16px; border-radius:8px; }
-    a.btn { display:inline-block; padding:10px 14px; background:#ff3b3b; color:#fff; border-radius:6px; text-decoration:none; font-weight:600; }
-    footer { text-align:center; color:#8a8a8a; margin-top:22px; font-size:13px; }
+    :root{
+      --bg:#0b0b0b; --card:#0f0f10; --accent:#ff3b3b; --muted:#8a8a8a; --text:#eee;
+    }
+    html,body{height:100%;margin:0;font-family:Inter, Arial, sans-serif;background:linear-gradient(135deg,#000,#0b0000);color:var(--text);}
+    .wrap{max-width:1100px;margin:32px auto;padding:24px;background:rgba(18,18,20,0.9);border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,0.6);}
+    header.site{display:flex;align-items:center;gap:18px;}
+    .logo{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,#8b0000,#ff2a2a);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:18px;}
+    nav.mainnav{margin-left:auto;}
+    nav.mainnav a{color:var(--text);text-decoration:none;margin:0 10px;font-weight:600;}
+    nav.mainnav a:hover{color:var(--accent);}
+    .banner{position:relative;margin:18px 0;border-radius:8px;overflow:hidden;background:#111;}
+    .banner img{width:100%;height:220px;object-fit:cover;display:block;filter:contrast(1.05) saturate(1.05);}
+    .banner .overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.6));}
+    .banner h1{margin:0;color:var(--accent);text-shadow:0 2px 10px rgba(0,0,0,0.6);font-size:28px;}
+    .social-icons a{margin-left:8px;display:inline-block;vertical-align:middle;}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;}
+    .card{background:var(--card);padding:16px;border-radius:8px;}
+    .btn{display:inline-block;padding:10px 14px;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none;font-weight:700;}
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px;padding-top:10px;border-top:1px solid rgba(255,59,59,0.06);}
+    @media (max-width:880px){
+      .grid{grid-template-columns:1fr;}
+      .banner img{height:160px;}
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <div class="logo">#I H G</div>
+    <header class="site" role="banner">
+      <div class="logo" aria-hidden="true">#I H G</div>
       <div>
         <h1>#Inside Hack Gaming</h1>
-        <p class="lead">Astuces, outils et guides pour améliorer ton gameplay — One hack at a Time.</p>
+        <p class="lead" style="margin:6px 0 0;color:#cfcfcf;">Astuces, outils et guides pour améliorer ton gameplay — One hack at a time.</p>
       </div>
+
+      <nav class="mainnav" aria-label="Navigation principale">
+        <a href="#">Accueil</a>
+        <a href="#">Astuces</a>
+        <a href="releases/v1.0.zip" class="btn" download>Télécharger v1.0</a>
+        <a href="#">À propos</a>
+      </nav>
     </header>
 
-    <div class="grid" style="margin-top:20px;">
-      <main class="card">
-        <h3>Logiciels & téléchargements</h3>
-        <p>Liste de mes outils et mods — liens de téléchargement sécurisés.</p>
-        <ul>
-          <li><a href="releases/v1.0.zip" class="btn">Télécharger v1.0 (ZIP)</a></li>
-          <!-- Remplace par les vrais liens / releases -->
-        </ul>
+    <div class="banner" role="img" aria-label="Bannière Inside Hack Gaming">
+      <img src="Phoenix_10_Utilise_limage_tlcharge_comme_fondGarde_la_texture_3.webp" alt="Bannière graphique Inside Hack Gaming">
+      <div class="overlay">
+        <h1>#Inside Hack Gaming</h1>
+        <div class="social-icons" aria-hidden="false">
+          <a href="https://www.youtube.com/@InsiderHackGaming" target="_blank" rel="noopener" title="YouTube">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style="width:28px;height:28px">
+          </a>
+          <a href="https://discord.gg/cZZusN5H" target="_blank" rel="noopener" title="Discord">
+            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt="Discord" style="width:28px;height:28px">
+          </a>
+        </div>
+      </div>
+    </div>
 
-        <h3 style="margin-top:14px;">Astuces & guides</h3>
-        <article>
-          <h4>Optimiser vos FPS</h4>
-          <p>Guide rapide : paramètres recommandés, drivers, et réglages du jeu.</p>
-        </article>
+    <div class="grid" style="margin-top:18px;">
+      <main class="card" role="main">
+        <h2>Unleashing the fun, one hack at a time ⚡</h2>
+        <p>Bienvenue sur Inside Hack Gaming — ton espace dédié aux astuces, outils et conseils pour t’amuser et optimiser ton expérience gaming !</p>
+
+        <section aria-labelledby="downloads">
+          <h3 id="downloads">Logiciels & téléchargements</h3>
+          <p>Liens de téléchargement sécurisés et versions.</p>
+          <p><a href="releases/v1.0.zip" class="btn" download>Télécharger v1.0 (ZIP)</a></p>
+        </section>
+
+        <section aria-labelledby="guides" style="margin-top:12px;">
+          <h3 id="guides">Astuces & guides</h3>
+          <article>
+            <h4>Optimiser vos FPS</h4>
+            <p>Guide rapide : paramètres recommandés, drivers et réglages.</p>
+          </article>
+          <!-- ... ajouter d'autres articles ici ... -->
+        </section>
       </main>
 
-      <aside class="card">
+      <aside class="card" role="complementary">
         <h3>Communauté</h3>
-        <p>Rejoins le Discord pour les échanges et mises à jour.</p>
-        <p><a href="#" class="btn">Rejoindre le Discord</a></p>
-        <hr style="margin:12px 0;">
+        <p>Rejoins le Discord pour échanges et mises à jour.</p>
+        <p><a href="https://discord.gg/cZZusN5H" class="btn" target="_blank" rel="noopener">Rejoindre le Discord</a></p>
+
+        <hr style="margin:12px 0;border-color:rgba(255,255,255,0.04)">
+
         <h4>Contact</h4>
-        <p>Email ou autres liens.</p>
+        <p>Email: <a href="mailto:contact@insidehackgaming.example" style="color:var(--accent)">contact@insidehackgaming.example</a></p>
       </aside>
     </div>
 
@@ -125,86 +102,9 @@
     </footer>
   </div>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Conseils console (peu visible) : éviter de publier des outils malveillants.
+  </script>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inside Hack Gaming</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
-  <!-- Header avec la bannière -->
-  <header class="banner">
-    <img src="banniere-youtube.webp" alt="Inside Hack Gaming" class="banner-image">
-    <div class="social-icons">
-      <a href="https://discord.gg/cZZusN5H" target="_blank" title="Discord">
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
-      </a>
-      <a href="https://www.youtube.com/@InsiderHackGaming" target="_blank" title="YouTube">
-        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
-      </a>
-    </div>
-  </header>
-
-  <!-- Corps du site -->
-  <main class="content">
-    <h1>#Inside Hack Gaming</h1>
-    <h2>Unleashing the fun, one hack at a time ⚡</h2>
-    <p>
-      Bienvenue sur Inside Hack Gaming — ton espace dédié aux astuces, outils et conseils
-      pour t’amuser et optimiser ton expérience gaming !
-    </p>
-<header class="banner">
-  <img src="Phoenix_10_Utilise_limage_tlcharge_comme_fondGarde_la_texture_3.webp" alt="Bannière Inside Hack Gaming" class="banner-img">
-  <div class="banner-overlay">
-    <h1>#Inside Hack Gaming</h1>
-    <div class="social-icons">
-      <a href="https://www.youtube.com/@InsiderHackGaming" target="_blank" title="YouTube">
-        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="icon">
-      </a>
-      <a href="https://discord.gg/cZZusN5H" target="_blank" title="Discord">
-        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt="Discord" class="icon">
-      </a>
-    </div>
-  </div>
-</header>
-</main>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Inside Hack Gaming — Tous droits réservés</p>
-  </footer>
-</body>
-</html>
-<header class="banner">
-  <img src="banner-youtube.jpg" alt="Bannière Inside Hack Gaming" class="banner-img">
-  <div class="banner-overlay">
-    <h1>#Inside Hack Gaming</h1>
-    <div class="social-icons">
-      <a href="https://www.youtube.com/@InsiderHackGaming" target="_blank">🎥</a>
-      <a href="https://discord.gg/cZZusN5H" target="_blank">💬</a>
-      <a href="https://twitter.com" target="_blank">🐦</a>
-    </div>
-  </div>
-</header>
-<header class="banner">
-  <img src="Phoenix_10_Utilise_limage_tlcharge_comme_fondGarde_la_texture_3.webp" alt="Bannière Inside Hack Gaming" class="banner-img">
-
-  <div class="banner-overlay">
-    <h1>#Inside Hack Gaming</h1>
-    <div class="social-icons">
-      <a href="https://www.youtube.com/@InsiderHackGaming" target="_blank" title="YouTube">
-        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="icon">
-      </a>
-      <a href="https://discord.gg/cZZusN5H" target="_blank" title="Discord">
-        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt="Discord" class="icon">
-      </a>
-    </div>
-  </div>
-</header>
-Phoenix_10_Utilise_limage_tlcharge_comme_fondGarde_la_texture_3.webp
