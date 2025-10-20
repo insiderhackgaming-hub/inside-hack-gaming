@@ -276,3 +276,17 @@ footer {
   mix-blend-mode: screen;
   filter: brightness(1.2) saturate(1.4);
 }
+/* Logo carré simple et propre */
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#logo img.logo-square {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 0; /* carré */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
