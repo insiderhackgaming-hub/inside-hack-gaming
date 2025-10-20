@@ -128,7 +128,17 @@
         <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="icon">
       </a>
       <a href="https://discord.gg/cZZusN5H" target="_blank" title="Discord">
-        <img src=<div class="logo-bg">
+        <!-- Remplace ton ancien logo par ceci -->
+<div class="logo"><!-- Remplace ton ancien logo par ceci -->
+<div class="logo">
+  <img class="site-logo-square" src="assets/img/logo-ihg.png" alt="#Inside Hack Gaming">
+  <span>#Inside Hack Gaming</span>
+</div>
+
+  <img class="site-logo-square" src="assets/img/logo-ihg.png" alt="#Inside Hack Gaming">
+  <span>#Inside Hack Gaming</span>
+</div>
+
   <img src="assets/img/logo-ihg.png" alt="Logo IHG">
 </div>
 
@@ -136,3 +146,20 @@
   </div>
 </header>
 Phoenix_10_Utilise_limage_tlcharge_comme_fondGarde_la_texture_3.webp
+/* Logo carré (remplace les règles précédentes pour .logo-bg si tu les avais) */
+.site-logo-square {
+  width: 56px;            /* taille : change à 40/48/64 selon ce que tu veux */
+  height: 56px;           /* garde la même valeur pour faire un carré */
+  object-fit: cover;      /* recadre l'image pour remplir le carré */
+  display: block;
+  border-radius: 0;       /* annule l'arrondi */
+  box-shadow: 0 4px 14px rgba(0,0,0,0.45); /* ombre subtile (optionnel) */
+  border: 2px solid rgba(255,0,0,0.06);    /* léger contour si tu veux */
+}
+
+/* Aligne le texte à côté proprement */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
