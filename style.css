@@ -290,3 +290,56 @@ footer {
   border-radius: 0; /* carré */
   box-shadow: 0 4px 10px rgba(0,0,0,0.6);
 }
+.logo {
+  height: 60px;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  background-color: #111; /* fond sombre */
+  padding: 10px 20px;
+  border-bottom: 2px solid #c00; /* ligne rouge */
+}
+
+.site-header .logo {
+  height: 55px;
+  width: auto;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+
+.site-header h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+<style>
+/* FIX logo : taille et alignement */
+.site-logo-square {
+  width: 56px;        /* change 56px → 40 / 48 / 64 selon ton goût */
+  height: 56px;
+  object-fit: cover;  /* garde l'image recadrée proprement */
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 6px; /* arrondit légèrement si tu veux */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* Si ton logo est dans .logo, aligne texte à côté */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Simple : limite la taille de toute image trop grande */
+img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
